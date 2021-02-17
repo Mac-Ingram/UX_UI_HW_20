@@ -6,13 +6,6 @@ body {
     margin: 50px !important;
 }
 
-.inline-block {
-    display: flex;
-    vertical-align: top;
-    font-family: 'Lato', sans-serif;
-
-}
-
 .topnav {
     justify-content: flex-end;
     height: 87px;
@@ -24,6 +17,13 @@ body {
 .topnav li {
     list-style-type: none;
     padding-right: 50px;
+}
+
+.inline-block {
+    display: flex;
+    vertical-align: top;
+    font-family: 'Lato', sans-serif;
+
 }
 
 .hover {
@@ -124,11 +124,6 @@ footer {
     padding: 15px;
 }
 
-.footerlist {
-    vertical-align: top;
-    padding: 25px;
-    color: #73F5AD;
-}
 
 button {
     background-color: #73F5AD;
@@ -333,6 +328,36 @@ a {
     margin-bottom: 50px;
 }
 
+.footer {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.footerlist {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.footeritem {
+      color:#73F5AD;
+      display: inline-flex;
+      margin-left: 25px;
+      margin-right: 25px;
+      font-size:24px;
+}
+.contactinfo {
+    display: flex;
+    flex-direction: column;
+}
+.footerinfo {
+    width: 400px;
+    padding-right: 200px;
+    margin-bottom: 20px;
+    color:#73F5AD;
+    display: flex;
+}
+
+
 @media only screen and (max-width: 600px){
     .flexContainer {
         display:flex;
@@ -347,15 +372,5 @@ a {
     }
 }
 
-@keyframes bounceArrow {
-    from {
-      margin-top: 0px;
-    }
-    50% {
-      margin-top: 7px;
-    }
-    to {
-      margin-top: 0px;
-    }
-  }
+
 
